@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-top-45 {
+  margin-top: 45px;
+}
+.margin-top-60 {
+  margin-top: 60px;
+}
+.margin-top-75 {
+  margin-top: 75px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.margin-bottom-45 {
+  margin-bottom: 45px;
+}
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+.margin-bottom-75 {
+  margin-bottom: 75px;
+}
+
+/*esercizio 1*/
+
+.ex-1-square {
+  transition: 2s;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+.row .ex-1-square:hover{
+  background-color: red;
+}
+
+/*esercizio 2*/
+.ex-2-square {
+  transition: 2s;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/*esercizio 3*/
+.ex-3-square {
+  cursor: pointer;
+  transition: 1s;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+/*esercizio 4*/
+.ex-4-square {
+  cursor: pointer;
+  transition: 2s;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/*esercizio 5*/
+.ex-5-square {
+  cursor: pointer;
+  transition: 2s;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  background: red;
+}
+
+.ex-5-square:hover{
+  transform: scale(2);
+}
+
+.ex-5-square:active{
+transform: scale(.5);
+}
+
+
+/*esercizio 6-7-8*/
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+/*esercizio 6*/
+
+.ex-6-img:hover{
+  cursor: pointer;
+  transition: 2s;
+  filter: grayscale(2);
+}
+
+/*esercizio 7*/
+
+.ex-7-img:hover{
+  cursor: pointer;
+  transition: 1s;
+  filter: grayscale(2) sepia(5);
+}
+
+/*esercizio 8*/
+
+.ex-8-img:hover{
+  cursor: pointer;
+  transition: 1s;
+  filter: grayscale(2);
+  border-radius: 20px;
+}
+
+/*esercizio 9*/
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+}
+
+.ex-9-img:hover{
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 1s;
+  filter: grayscale(2) sepia(5);
+  transform: scale(1.5);
+}
+
+/* esercizio 10*/
+.ex-10-icon {
+  font-size: 60px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+      transform: rotate(1turn);
+  }
+}
+
+/* esercizio 11*/
+.ex-11-icon {
+  font-size: 60px;
+}
+
+.ex-11-icon:hover {
+  animation: spinAnimation 2s linear;
+}
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* esercizio 12-13*/
+
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+/* esercizio 12*/
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+  0% {
+      left: 10%;
+  }
+  50% {
+      left: calc(100% - 60px);
+  }
+  100% {
+      left: 10%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: moveBottomWhite 2s linear;
+}
+@keyframes moveBottomWhite {
+  0% {
+      right: 20%;
+  }
+  50% {
+      right: calc(100% - 60px);
+  }
+  100% {
+      right: 20%;
+  }
+}
+
+
+/* esercizio 13*/
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+  0% {
+      left: 10%;
+  }
+  50% {
+      left: calc(100% - 60px);
+  }
+  100% {
+      left: 10%;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: moveBottomWhite 2s linear;
+}
+@keyframes moveBottomWhite {
+  0% {
+      right: 10%;
+  }
+  50% {
+      right: calc(100% - 60px);
+  }
+  100% {
+      right: 10%;
+  }
+}
